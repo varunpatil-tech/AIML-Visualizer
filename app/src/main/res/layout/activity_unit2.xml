@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FC"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Hero header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/bg_dashboard_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIML VISUALIZER  /  MODULE 02"
+                android:textColor="#B9E8FF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Learning and\nPlanning"
+                android:textColor="#FFFFFF"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Explore how AI learns from experience, represents knowledge, and creates plans to achieve goals."
+                android:textColor="#E0F2FE"
+                android:textSize="15sp"
+                android:lineSpacingExtra="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="7dp"
+                android:background="@drawable/bg_unit_number"
+                android:text="LEARN + EXPERIMENT"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Topic selector -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Explore the syllabus"
+            android:textColor="#172B4D"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="14dp"
+            android:text="Choose a concept and learn it step by step."
+            android:textColor="#66758A"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT A TOPIC"
+                android:textColor="#4263A5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <Spinner
+                android:id="@+id/unit2TopicSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4263A5"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:spinnerMode="dropdown"
+                android:contentDescription="Choose a Unit 2 topic" />
+
+            <TextView
+                android:id="@+id/unit2ProgressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Topic 1 of 12"
+                android:textColor="#4263A5"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Topic explanation -->
+        <TextView
+            android:id="@+id/unit2CategoryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:paddingBottom="5dp"
+            android:text="LEARNING"
+            android:textColor="#0786A0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:id="@+id/unit2TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is Learning?"
+            android:textColor="#172B4D"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unit2ExplanationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="18dp"
+            android:background="@drawable/bg_unit_button"
+            android:text="Topic explanation appears here."
+            android:textColor="#334155"
+            android:textSize="15sp"
+            android:lineSpacingExtra="5dp"
+            android:elevation="1dp" />
+
+        <!-- Real-world example -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:paddingBottom="9dp"
+            android:text="REAL-WORLD EXAMPLE"
+            android:textColor="#172B4D"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04" />
+
+        <TextView
+            android:id="@+id/unit2ExampleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:background="#E3EEFF"
+            android:text="An example appears here."
+            android:textColor="#24509A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Key takeaway -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:paddingBottom="9dp"
+            android:text="KEY TAKEAWAY"
+            android:textColor="#172B4D"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04" />
+
+        <TextView
+            android:id="@+id/unit2TakeawayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:background="#E0F5EA"
+            android:text="The main point appears here."
+            android:textColor="#176B45"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Interactive lab -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="PRACTICAL LEARNING"
+            android:textColor="#0786A0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Interactive Planning Lab"
+            android:textColor="#172B4D"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:text="Experiment with different strategies for achieving goals."
+            android:textColor="#66758A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp" />
+
+        <!-- Simulator cards: preserve all existing IDs -->
+        <Button
+            android:id="@+id/blocksWorldPlannerButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="12dp"
+            android:text="01   Blocks World Planner"
+            android:textAllCaps="false"
+            android:textColor="#17365D"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/stripsPlannerButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="12dp"
+            android:text="02   Interactive STRIPS Planner"
+            android:textAllCaps="false"
+            android:textColor="#17365D"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/goalStackPlannerButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="12dp"
+            android:text="03   Goal Stack Planning"
+            android:textAllCaps="false"
+            android:textColor="#17365D"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/nonLinearPlanningButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="12dp"
+            android:text="04   Non-linear Planning"
+            android:textAllCaps="false"
+            android:textColor="#17365D"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/hierarchicalPlanningButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="12dp"
+            android:text="05   Hierarchical Planning (HTN)"
+            android:textAllCaps="false"
+            android:textColor="#17365D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/leastCommitmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="12dp"
+            android:text="06   Least Commitment Strategy"
+            android:textAllCaps="false"
+            android:textColor="#17365D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+        <!-- Topic navigation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTINUE LEARNING"
+            android:textColor="#66758A"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:paddingBottom="10dp" />
+
+        <Button
+            android:id="@+id/unit2PreviousButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_unit_button"
+            android:backgroundTint="@null"
+            android:text="←  Previous Topic"
+            android:textAllCaps="false"
+            android:textColor="#24509A"
+            android:textStyle="bold"
+            android:elevation="1dp" />
+
+        <Button
+            android:id="@+id/unit2NextButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_unit_number"
+            android:backgroundTint="@null"
+            android:text="Next Topic  →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+</ScrollView>

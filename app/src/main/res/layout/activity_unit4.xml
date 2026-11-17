@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FC"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Hero header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/bg_dashboard_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIML VISUALIZER  /  MODULE 04"
+                android:textColor="#B9E8FF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Introduction to\nMachine Learning"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:id="@+id/unit4ProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="7dp"
+                android:background="@drawable/bg_unit_number"
+                android:text="Topic 1 of 11"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Topic selector -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Explore the syllabus"
+            android:textColor="#172B4D"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Study each concept, follow examples, and apply what you learn."
+            android:textColor="#66758A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT A TOPIC"
+                android:textColor="#0786A0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <Spinner
+                android:id="@+id/unit4TopicSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4263A5"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <!-- Topic content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/unit4CategoryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MACHINE LEARNING"
+                android:textColor="#0786A0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:id="@+id/unit4TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#172B4D"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="PREREQUISITES"
+                android:textColor="#4263A5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit4FoundationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#334155"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="CONCEPT EXPLANATION"
+                android:textColor="#4263A5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit4ExplanationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#334155"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="WORKED EXAMPLE"
+                android:textColor="#4263A5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit4ExampleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="14dp"
+                android:background="#E3EEFF"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#24509A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="KEY TAKEAWAY"
+                android:textColor="#26734D"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit4TakeawayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="14dp"
+                android:background="#E0F5EA"
+                android:textColor="#176B45"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- Topic navigation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="CONTINUE LEARNING"
+            android:textColor="#66758A"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/unit4PreviousButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_unit_button"
+                android:backgroundTint="@null"
+                android:text="← Previous"
+                android:textAllCaps="false"
+                android:textColor="#24509A"
+                android:textStyle="bold"
+                android:elevation="1dp" />
+
+            <Button
+                android:id="@+id/unit4NextButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Next Topic →"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:elevation="2dp" />
+
+        </LinearLayout>
+
+        <!-- Interactive playground heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="HANDS-ON EXPERIMENTS"
+            android:textColor="#0786A0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Interactive ML Playground"
+            android:textColor="#172B4D"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Change values, run algorithms, and inspect their results."
+            android:textColor="#66758A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp" />
+
+        <!-- KNN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01  /  K-Nearest Neighbours"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Classify a new point using the majority class among its k nearest training points."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <EditText
+                android:id="@+id/unit4KnnXEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4263A5"
+                android:hint="New point X (0 to 10)"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="4"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4KnnYEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="New point Y (0 to 10)"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="4"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4KnnKEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="K (positive integer)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="3"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit4KnnButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Run KNN"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit4KnnResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#E3EEFF"
+                android:padding="12dp"
+                android:text="KNN result will appear here."
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+            <FrameLayout
+                android:id="@+id/unit4KnnPlotContainer"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="12dp"
+                android:background="#F3F7FC" />
+
+        </LinearLayout>
+
+        <!-- Logistic regression -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02  /  Logistic Regression"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Convert a model score z into a probability using the sigmoid function."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <EditText
+                android:id="@+id/unit4LogisticZEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4263A5"
+                android:hint="Model score z"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="2"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit4LogisticButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Calculate Probability"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit4LogisticResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#E3EEFF"
+                android:padding="12dp"
+                android:text="Probability result will appear here."
+                android:textColor="#24509A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="SIGMOID PROBABILITY CURVE"
+                android:textColor="#0786A0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <FrameLayout
+                android:id="@+id/unit4SigmoidPlotContainer"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="8dp"
+                android:background="#F8FAFE" />
+
+
+        </LinearLayout>
+
+        <!-- Classification metrics -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03  /  Classification Metrics"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Enter confusion-matrix counts to calculate accuracy, precision, recall, and F1-score."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <EditText
+                android:id="@+id/unit4TpEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4263A5"
+                android:hint="True Positive (TP)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="40"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4TnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="True Negative (TN)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="50"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4FpEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="False Positive (FP)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="10"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4FnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="False Negative (FN)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="5"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit4MetricsButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Calculate Classification Metrics"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit4MetricsResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#E3EEFF"
+                android:padding="12dp"
+                android:text="Classification metrics will appear here."
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+        <!-- SVM -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04  /  Support Vector Machine"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Evaluate the signed decision score for a linear SVM-style boundary."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <EditText
+                android:id="@+id/unit4SvmX1Edit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#4263A5"
+                android:hint="Point x1"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="2"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4SvmX2Edit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="Point x2"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="2"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4SvmW1Edit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="Weight w1"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4SvmW2Edit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="Weight w2"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit4SvmBiasEdit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:hint="Bias b"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="-3"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit4SvmButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Evaluate SVM Score"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit4SvmResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#E3EEFF"
+                android:padding="12dp"
+                android:text="SVM result will appear here."
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+        <!-- Shared algorithm steps -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="HOW THE ALGORITHM WORKS"
+            android:textColor="#4263A5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04" />
+
+        <TextView
+            android:id="@+id/unit4StepsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="1dp"
+            android:padding="16dp"
+            android:text="Algorithm steps will appear here."
+            android:textColor="#334155"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+</ScrollView>

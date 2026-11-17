@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FC"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Hero header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/bg_dashboard_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIML VISUALIZER  /  MODULE 06"
+                android:textColor="#B9E8FF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Hypothesis\nDesign"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Formulate hypotheses. Test statistical claims. Design reliable ML experiments."
+                android:textColor="#D8E9F7"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- Topic selector -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Explore the syllabus"
+            android:textColor="#172B4D"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/unit6ProgressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topic 1 of 6"
+                android:textColor="#0786A0"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:paddingBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/unit6TopicSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:backgroundTint="#4263A5"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/unit6TopicCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="FOUNDATIONS"
+                android:textColor="#0786A0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit6TopicTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Introduction to Hypothesis Design"
+                android:textColor="#172B4D"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit6Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#334155"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PRACTICAL EXAMPLE"
+                android:textColor="#0786A0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit6Example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#E3EEFF"
+                android:padding="14dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#24509A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="KEY TAKEAWAY"
+                android:textColor="#26734D"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:id="@+id/unit6Takeaway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#E0F5EA"
+                android:padding="14dp"
+                android:textColor="#176B45"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/unit6PreviousButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_unit_button"
+                    android:backgroundTint="@null"
+                    android:text="← Previous"
+                    android:textAllCaps="false"
+                    android:textColor="#24509A"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/unit6NextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_unit_number"
+                    android:backgroundTint="@null"
+                    android:text="Next Topic →"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Lab section heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="HANDS-ON EXPERIMENTS"
+            android:textColor="#0786A0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Statistical Testing Lab"
+            android:textColor="#172B4D"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Explore a two-tailed Z-test and learn to express a research question as testable hypotheses."
+            android:textColor="#66758A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Hypothesis testing calculator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01  /  Hypothesis Testing Calculator"
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Two-tailed Z-test approximation for a population mean. The entered standard deviation is assumed to be the population standard deviation."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Sample mean (x̄)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6SampleMeanInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. 105"
+                android:inputType="numberDecimal|numberSigned"
+                android:singleLine="true"
+                android:text="105"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Hypothesized population mean (μ₀)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6HypothesizedMeanInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. 100"
+                android:inputType="numberDecimal|numberSigned"
+                android:singleLine="true"
+                android:text="100"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Population standard deviation (σ)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6StdDevInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. 15"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:text="15"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Sample size (n)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6SampleSizeInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. 36"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="36"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Significance level (α)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6AlphaInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. 0.05"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:text="0.05"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/unit6CalculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Calculate Hypothesis Test"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit6HypothesisResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#E3EEFF"
+                android:padding="14dp"
+                android:text="Enter values and calculate the result."
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Z-Distribution Plot"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.example.aiml_project.ZDistributionPlotView
+                android:id="@+id/unit6ZDistributionPlot"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:contentDescription="Standard normal distribution showing critical rejection regions and the observed Z-score" />
+
+
+        </LinearLayout>
+
+        <!-- Hypothesis design exercise -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02  /  Hypothesis Design Exercise"
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Define a measurable outcome and target threshold to generate an example null and alternative hypothesis."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Measurable outcome or feature"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6FeatureInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. Student exam score"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:text="Student exam score"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Target threshold"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit6ThresholdInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:hint="e.g. 75"
+                android:inputType="numberDecimal|numberSigned"
+                android:singleLine="true"
+                android:text="75"
+                android:textColor="#172B4D"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/unit6DesignButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Design Hypothesis"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit6DesignResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#E0F5EA"
+                android:padding="14dp"
+                android:text="Your hypothesis design will appear here."
+                android:textColor="#176B45"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="AIML VISUALIZER  •  UNIT 06"
+            android:textColor="#718096"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

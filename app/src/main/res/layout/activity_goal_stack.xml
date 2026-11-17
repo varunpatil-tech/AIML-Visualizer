@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal Stack Planning"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blocks World: Move A onto B, and B onto C."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal Stack (top first)"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goalStackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Start to begin."
+            android:textSize="17sp"
+            android:background="#E8EAF6"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current World State"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goalWorldStateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A: Table | B: Table | C: On B"
+            android:textSize="17sp"
+            android:background="#E8F5E9"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planning Step"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goalStackExplanationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The planner will explain each step here."
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:id="@+id/goalStackProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/startGoalStackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Planning" />
+
+        <Button
+            android:id="@+id/nextGoalStackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/resetGoalStackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+        <Button
+            android:id="@+id/stripsBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#4263A5"
+            android:text="← Back"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNIT 02  •  CLASSICAL PLANNING"
+            android:textColor="#4263A5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interactive STRIPS Planner"
+            android:textColor="#172B4D"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build a plan by selecting actions, checking their preconditions, and observing how each action changes the world."
+            android:textColor="#52627A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="18dp" />
+
+        <!-- Goal card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E4ECFA"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TARGET GOAL"
+                android:textColor="#31538C"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place A on B and B on C."
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/stripsGoalStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GOAL NOT ACHIEVED"
+                android:textColor="#B43C2D"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- World state -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. CURRENT WORLD STATE"
+            android:textColor="#172B4D"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsStateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:textColor="#24364B"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="14dp"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Action selection card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. SELECT AN ACTION"
+                android:textColor="#172B4D"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TAP THE DROPDOWN BELOW to choose an operation."
+                android:textColor="#52627A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/stripsActionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:backgroundTint="#DCE7FA"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:spinnerMode="dropdown"
+                android:contentDescription="Choose a STRIPS action" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose an action first, then inspect or execute it."
+                android:textColor="#4263A5"
+                android:textSize="12sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp" />
+
+            <Button
+                android:id="@+id/stripsInspectButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="INSPECT ACTION"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#4263A5"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/stripsNextButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="▶  EXECUTE SELECTED ACTION"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:backgroundTint="#21865B"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Action details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. ACTION DETAILS"
+            android:textColor="#172B4D"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsActionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Action"
+            android:textColor="#172B4D"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsPreconditionsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRECONDITIONS"
+            android:textColor="#2459A9"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="#E5EEFF"
+            android:padding="14dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsAddListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD LIST"
+            android:textColor="#176B45"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="#E3F5E9"
+            android:padding="14dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsDeleteListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE LIST"
+            android:textColor="#A52F2F"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="#FBE8E8"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Validation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. VALIDATION AND EXPLANATION"
+            android:textColor="#172B4D"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsExplanationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select an action to inspect its validity."
+            android:textColor="#24364B"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- State transition -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. STATE TRANSITION"
+            android:textColor="#172B4D"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/stripsTransitionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose an action to begin."
+            android:textColor="#24364B"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="#FFFFFF"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Progress -->
+        <TextView
+            android:id="@+id/stripsProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actions executed: 0"
+            android:textColor="#52627A"
+            android:textSize="13sp"
+            android:lineSpacingExtra="4dp"
+            android:background="#E9EDF4"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/stripsPreviousButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="↶ Undo"
+                android:textAllCaps="false"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/stripsStartButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Restart"
+                android:textAllCaps="false"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/stripsResetButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:layout_marginStart="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

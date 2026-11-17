@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="stripsPreconditionsText" type="id" />
+    <item name="stripsAddListText" type="id" />
+    <item name="stripsDeleteListText" type="id" />
+    <item name="stripsExplanationText" type="id" />
+    <item name="stripsProgressText" type="id" />
+    <item name="stripsTransitionText" type="id" />
+    <item name="stripsStartButton" type="id" />
+    <item name="stripsPreviousButton" type="id" />
+    <item name="stripsResetButton" type="id" />
+</resources>

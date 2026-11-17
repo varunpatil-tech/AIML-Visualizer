@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-linear Planning"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scenario: Prepare tea and toast. Independent actions can be performed in either order, while each task's dependencies must be respected."
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goals"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nonLinearGoalsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tea ready\nToast ready"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:background="#E8EAF6"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Partial-order plan"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nonLinearPlanText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Start to generate the plan."
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:background="#E8F5E9"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current action"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nonLinearActionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No action executed yet."
+            android:textSize="17sp"
+            android:padding="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/nonLinearExplanationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The planner will explain the dependencies between actions."
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/nonLinearProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 0"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/startNonLinearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Planning" />
+
+        <Button
+            android:id="@+id/nextNonLinearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Action"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/resetNonLinearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F7FC"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Hero header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/bg_dashboard_header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIML VISUALIZER  /  MODULE 05"
+                android:textColor="#B9E8FF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Evaluation Metrics\n&amp; Ensemble Learning"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Measure model performance. Understand errors. Combine predictions."
+                android:textColor="#D8E9F7"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- Topic selector -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Explore the syllabus"
+            android:textColor="#172B4D"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/unit5ProgressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topic 1 of 6"
+                android:textColor="#0786A0"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:paddingBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/unit5TopicSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:backgroundTint="#4263A5"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/unit5TopicCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="UNIT 5 • EVALUATION AND ENSEMBLES"
+                android:textColor="#0786A0"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:letterSpacing="0.04"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/unit5TopicTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ROC Curves"
+                android:textColor="#172B4D"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:id="@+id/unit5Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#334155"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRACTICAL EXAMPLE"
+                android:textColor="#0786A0"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:letterSpacing="0.04"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/unit5Example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3EEFF"
+                android:padding="14dp"
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KEY TAKEAWAY"
+                android:textColor="#26734D"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:letterSpacing="0.04"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/unit5Takeaway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0F5EA"
+                android:padding="14dp"
+                android:textColor="#176B45"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp">
+
+                <Button
+                    android:id="@+id/unit5PreviousButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/bg_unit_button"
+                    android:backgroundTint="@null"
+                    android:text="← Previous"
+                    android:textAllCaps="false"
+                    android:textColor="#24509A"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/unit5NextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/bg_unit_number"
+                    android:backgroundTint="@null"
+                    android:text="Next Topic →"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Interactive lab heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="HANDS-ON EXPERIMENTS"
+            android:textColor="#0786A0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Model Evaluation Lab"
+            android:textColor="#172B4D"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Change the inputs and see how evaluation metrics, learning updates, and model voting work."
+            android:textColor="#66758A"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- ROC calculator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01  /  ROC Point Calculator"
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Calculate true positive rate and false positive rate from confusion-matrix counts."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="True Positives (TP)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5TpInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="40"
+                android:hint="TP"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="False Positives (FP)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5FpInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="10"
+                android:hint="FP"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="False Negatives (FN)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5FnInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="5"
+                android:hint="FN"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="True Negatives (TN)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5TnInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="50"
+                android:hint="TN"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit5RocButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Calculate ROC Point"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit5RocResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#E3EEFF"
+                android:padding="14dp"
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ROC SPACE"
+                android:textColor="#0786A0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="The red point represents your classifier. The diagonal is the random-classifier reference."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <FrameLayout
+                android:id="@+id/unit5RocPlotContainer"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="10dp"
+                android:background="#F8FAFE" />
+
+        </LinearLayout>
+
+        <!-- Perceptron error correction -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02  /  Perceptron Error Correction"
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Observe how a perceptron adjusts its weight and bias based on prediction error."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <EditText
+                android:id="@+id/unit5XInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="1"
+                android:hint="Input x"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit5WeightInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0.2"
+                android:hint="Weight w"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit5BiasInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0"
+                android:hint="Bias b"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit5TargetInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="1"
+                android:hint="Target: 0 or 1"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <EditText
+                android:id="@+id/unit5RateInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="numberDecimal"
+                android:text="0.1"
+                android:hint="Learning rate"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit5PerceptronButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Update Perceptron"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit5PerceptronResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#E0F5EA"
+                android:padding="14dp"
+                android:textColor="#176B45"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <!-- Ensemble voting -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_unit_button"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03  /  Ensemble Majority Voting"
+                android:textColor="#172B4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Enter binary predictions from three models. The majority vote determines the ensemble prediction."
+                android:textColor="#66758A"
+                android:textSize="13sp"
+                android:lineSpacingExtra="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Model 1 prediction (0 or 1)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5Model1Input"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="1"
+                android:hint="0 or 1"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Model 2 prediction (0 or 1)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5Model2Input"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="0"
+                android:hint="0 or 1"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Model 3 prediction (0 or 1)"
+                android:textColor="#334155"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/unit5Model3Input"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#4263A5"
+                android:inputType="number"
+                android:text="1"
+                android:hint="0 or 1"
+                android:padding="10dp"
+                android:textColor="#172B4D" />
+
+            <Button
+                android:id="@+id/unit5EnsembleButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_unit_number"
+                android:backgroundTint="@null"
+                android:text="Run Majority Vote"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit5EnsembleResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#E3EEFF"
+                android:padding="14dp"
+                android:textColor="#24509A"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="AIML VISUALIZER  •  UNIT 05"
+            android:textColor="#718096"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>

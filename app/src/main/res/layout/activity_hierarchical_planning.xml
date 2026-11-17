@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F8FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Screen heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hierarchical Planning (HTN)"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#243568"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore how a complex task is decomposed into smaller tasks and executable actions. Tap any node in the tree to learn more."
+            android:textSize="15sp"
+            android:textColor="#555D70"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- High-level task -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="High-Level Task"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#243568" />
+
+        <TextView
+            android:id="@+id/htnTaskText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prepare Breakfast"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#243568"
+            android:gravity="center"
+            android:padding="14dp"
+            android:background="#E5EAFB"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Tree section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Decomposition Tree"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#243568" />
+
+        <TextView
+            android:id="@+id/htnTreeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Start Decomposition to begin."
+            android:textSize="14sp"
+            android:textColor="#45516A"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <com.example.aiml_project.HierarchicalTreeView
+            android:id="@+id/hierarchicalTreeView"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:background="#F8F7FF"
+            android:contentDescription="Interactive hierarchical task tree. Tap a node to inspect it."
+            android:layout_marginBottom="20dp" />
+
+        <!-- Information panel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Subtask / Action"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#243568"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/htnActionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected: Prepare Breakfast"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#243568"
+                android:padding="12dp"
+                android:background="#EEF1FA"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/htnExplanationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a node in the tree to view its classification, subtasks, and role in the plan."
+                android:textSize="16sp"
+                android:textColor="#3E4659"
+                android:lineSpacingExtra="4dp"
+                android:padding="12dp"
+                android:background="#F5F7FC"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+        <!-- Progress -->
+        <TextView
+            android:id="@+id/htnProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#45516A"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Controls -->
+        <Button
+            android:id="@+id/htnStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Decomposition" />
+
+        <Button
+            android:id="@+id/htnNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Step"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/htnResetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
